@@ -10,6 +10,28 @@
     margin: 0;
     padding: 0;
 }
+::-webkit-scrollbar {
+  width: 25px;
+  background:radial-gradient(circle at 50% 6.2%, rgb(22,22,22), rgba(12, 12, 12, 0.808) 6%),
+    linear-gradient(180deg, rgb(12, 12, 12) 5%, rgb(0, 21, 41) 60%, rgb(56, 0, 82) 120%);
+}
+
+::-webkit-scrollbar-track {
+  margin-block: 50px;
+  border-radius: 100vw;
+  box-shadow: inset 0 0 5px black;
+  background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(232,255,0,1) 50%, rgba(24,175,0,1) 100%);  
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100vw;
+  background: #383838;
+  box-shadow:  0 0 5px black;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 html,
 body {
     overflow-x: hidden;
@@ -160,7 +182,7 @@ H2 {
   max-width: 500px;
   margin: 0 auto;
   transition: opacity 0.5s;
-}
+} 
 #progress {
   font-size: 40px;
   color: white;
